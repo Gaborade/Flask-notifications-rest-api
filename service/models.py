@@ -9,7 +9,7 @@ class NotificationModel:
     """
 
     def __init__(self, message, ttl, creation_date, notif_category, displayed_times):
-        self.id = 0     # automatically increment counter for each API call
+        self.id = 0     # automatically increment counter for each API call to Notification instance
         self.message = message
         self.ttl = ttl
         self.creation_date = creation_date
