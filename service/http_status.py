@@ -53,6 +53,8 @@ class HttpStatus(Enum):
 
     # static methods which receive any of the status codes defined in the enumeration and
     # determine whether they are informational, success, redirect, server error or client error categories
+    # static methods used because we are managing class state ie. the class variables and not object state ie 
+    # variables or attributes defined within a class constructor(__init__)
 
     @staticmethod
     def is_informational(cls, status_code):
