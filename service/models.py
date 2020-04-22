@@ -8,11 +8,18 @@ class NotificationModel:
     displayed_times: a boolean value that shows whether a notif has been displayed at least once    
     """
 
-    def __init__(self, message, ttl, creation_date, notif_category, displayed_times):
+    """def __init__(self, message: str, ttl: int, notification_category: str):
         self.id = 0     # automatically increment counter for each API call to Notification instance
         self.message = message
         self.ttl = ttl
-        self.creation_date = creation_date
-        self.notif_category = notif_category
-        self.displayed_times = 0
+       # self.creation_date = creation_date
+        self.notification_category = notification_category
+        self.displayed_times = 0"""
         
+
+    def __init__(self, message, ttl, notification_category):
+        self.id = 0
+        self.message = message
+        self.ttl = ttl
+        self.notification_category = notification_category
+        self.displayed_times = 0
